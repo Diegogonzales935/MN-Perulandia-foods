@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN Peru Foods - Home</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#2d4a22',
+                            light: '#f9f8f4',
+                            footer: '#273c1d',
+                            beige: '#f3ece1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            /* ACTUALIZADO CON TU IMAGEN LOCAL */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Imagenes/Header.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-bg {
+            /* Mantuve la de prueba porque no había una específica para el contacto en la carpeta */
+            background-image: url('https://images.unsplash.com/photo-1592982537447-6f296d246603?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-brand-light">
+
+    <!-- Header / Navbar -->
+    <header class="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-10 py-6 text-white">
+        
+        <!-- LOGO ACTUALIZADO CON LA ESTRUCTURA CORREGIDA -->
+        <a href="index.html" class="flex-shrink-0">
+            <img src="Imagenes/MN logo.png" alt="MN Peru Foods Logo" class="h-10 md:h-12 w-auto object-contain">
+        </a>
+
+        <!-- MENU NAVEGACIÓN -->
+        <nav class="hidden md:flex bg-black/20 rounded-full px-2 py-1 backdrop-blur-sm border border-white/20 items-center">
+            <a href="index.html" class="px-6 py-2 bg-[#f3ece1] text-black rounded-full font-medium text-sm transition">Home</a>
+            <a href="nosotros.html" class="px-6 py-2 hover:bg-white/20 rounded-full font-medium text-sm transition">About Us</a>
+            <a href="productos.html" class="px-6 py-2 hover:bg-white/20 rounded-full font-medium text-sm transition">Products</a>
+            <a href="contacto.html" class="px-6 py-2 border border-white rounded-full font-medium text-sm ml-2 hover:bg-white hover:text-black transition">Contact Us</a>
+        </nav>
+
+        <!-- TELÉFONO -->
+        <div class="text-right text-sm flex-shrink-0">
+            <p class="font-medium">Call us 24/7</p>
+            <a href="tel:+51982263974" class="font-bold underline decoration-1 underline-offset-2">+51 982 263 974</a>
+        </div>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[80vh] flex flex-col items-center justify-center text-center px-4 relative">
+        <h1 class="text-5xl md:text-6xl text-white font-serif font-bold max-w-4xl leading-tight mb-6 mt-10">
+            Rooted in the field,<br>committed to every harvest
+        </h1>
+        <p class="text-lg text-white/90 max-w-2xl mb-8 font-medium">
+            We bring the best of peruvian agriculture to the world thanks to our close relationship with the people and their fields.
+        </p>
+        <a href="nosotros.html" class="px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white hover:text-black transition">
+            Learn more about us
+        </a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="max-w-7xl mx-auto px-6 -mt-32 relative z-10 mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="Imagenes/Close to the source.png" alt="Close to the source" class="h-64 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-brand-green mb-3">Close to the source</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">We work side by side with farmers, ensuring traceability, quality, and responsible sourcing from the very beginning.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="Imagenes/Relationships that last.png" alt="Relationships that last" class="h-64 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-brand-green mb-3">Relationships that last</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">On-time deliveries, prices as quoted, and consistent quality in every transaction.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="Imagenes/Tailored to your needs.png" alt="Tailored to your needs" class="h-64 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-brand-green mb-3">Tailored to your needs</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">Every customer receives comprehensive support and an immediate response.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif font-bold text-gray-800 mb-12">Our Products</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-left">
+                <!-- Product 1: Limas -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden relative pb-6">
+                    <img src="Imagenes/Limas.png" alt="Limas" class="w-full h-64 object-cover rounded-t-3xl">
+                    <div class="bg-white mx-6 -mt-12 relative z-10 p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-2xl font-serif font-bold mb-2 text-gray-800">Limas</h3>
+                        <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs border border-gray-300 text-gray-500 px-3 py-1 rounded-full">Peruvian Origin</span>
+                            <a href="producto-limas.html" class="bg-brand-green text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-900 transition">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2: Beans -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden relative pb-6">
+                    <img src="Imagenes/Beans.png" alt="Beans" class="w-full h-64 object-cover rounded-t-3xl">
+                    <div class="bg-white mx-6 -mt-12 relative z-10 p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-2xl font-serif font-bold mb-2 text-gray-800">Beans</h3>
+                        <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs border border-gray-300 text-gray-500 px-3 py-1 rounded-full">Peruvian Origin</span>
+                            <a href="producto-frijoles.html" class="bg-brand-green text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-900 transition">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3: Corns -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden relative pb-6">
+                    <img src="Imagenes/Corns.png" alt="Corns" class="w-full h-64 object-cover rounded-t-3xl">
+                    <div class="bg-white mx-6 -mt-12 relative z-10 p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-2xl font-serif font-bold mb-2 text-gray-800">Corns</h3>
+                        <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs border border-gray-300 text-gray-500 px-3 py-1 rounded-full">Peruvian Origin</span>
+                            <a href="producto-maiz.html" class="bg-brand-green text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-900 transition">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4: Favas -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden relative pb-6">
+                    <img src="Imagenes/Favas.png" alt="Favas" class="w-full h-64 object-cover rounded-t-3xl">
+                    <div class="bg-white mx-6 -mt-12 relative z-10 p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-2xl font-serif font-bold mb-2 text-gray-800">Favas</h3>
+                        <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs border border-gray-300 text-gray-500 px-3 py-1 rounded-full">Peruvian Origin</span>
+                            <a href="producto-habas.html" class="bg-brand-green text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-900 transition">View Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="productos.html" class="inline-block bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition">View all products</a>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="bg-white py-20 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-serif font-bold text-brand-green mb-4">Our Certifications</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Certifications that guarantee quality, traceability, and compliance at every stage of our export chain.
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end gap-6">
+                <!-- Certification Placeholders -->
+                <div class="w-20 h-20 bg-gray-200 rounded-full"></div>
+                <div class="w-20 h-20 bg-gray-200 rounded-full"></div>
+                <div class="w-20 h-20 bg-gray-200 rounded-full"></div>
+                <div class="w-20 h-20 bg-gray-200 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-bg py-24 px-6 relative">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-2xl relative z-10">
+            <!-- Left Side -->
+            <div class="md:w-1/2 bg-[#5c4033]/80 p-12 text-white flex flex-col justify-center">
+                <h2 class="text-4xl font-serif font-bold mb-4">Leave us a message</h2>
+                <p class="text-white/80 text-sm leading-relaxed">
+                    We are committed to providing our customers with exceptional service while offering our employees the best training.
+                </p>
+            </div>
+            <!-- Right Side (Form) -->
+            <div class="md:w-1/2 p-10 bg-white">
+                <form action="mensaje-enviado.html" method="POST" class="space-y-4">
+                    <input type="text" required placeholder="Full Name" class="w-full bg-gray-100 text-sm p-3 rounded focus:outline-none focus:ring-1 focus:ring-brand-green">
+                    <input type="email" required placeholder="Email address" class="w-full bg-gray-100 text-sm p-3 rounded focus:outline-none focus:ring-1 focus:ring-brand-green">
+                    <div class="flex gap-4">
+                        <input type="tel" placeholder="Phone" class="w-1/2 bg-gray-100 text-sm p-3 rounded focus:outline-none focus:ring-1 focus:ring-brand-green">
+                        <input type="text" placeholder="Country" class="w-1/2 bg-gray-100 text-sm p-3 rounded focus:outline-none focus:ring-1 focus:ring-brand-green">
+                    </div>
+                    <input type="text" placeholder="Subject" class="w-full bg-gray-100 text-sm p-3 rounded focus:outline-none focus:ring-1 focus:ring-brand-green">
+                    <textarea placeholder="Write message" rows="4" class="w-full bg-gray-100 text-sm p-3 rounded focus:outline-none focus:ring-1 focus:ring-brand-green"></textarea>
+                    <button type="submit" class="bg-black text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-footer text-white py-16 px-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between mb-16">
+            <div class="mb-10 md:mb-0 space-y-6">
+                <div>
+                    <p class="font-bold text-lg">+51 982 263 974</p>
+                    <p class="text-sm text-white/70">Got Questions? Call us 24/7</p>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">Lima - Perú</p>
+                    <p class="text-sm text-white/70">Our Location</p>
+                </div>
+                <div>
+                    <a href="mailto:mercedes.nalvarte@mnperufoods.pe" class="text-sm hover:underline">mercedes.nalvarte@mnperufoods.pe</a>
+                </div>
+                <div class="pt-2">
+                    <a href="#" class="inline-block border border-white p-1 hover:bg-white hover:text-brand-footer transition">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-lg mb-4">Menu</h4>
+                <ul class="space-y-3 text-sm text-white/80">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="nosotros.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="productos.html" class="hover:text-white transition">Products</a></li>
+                    <li><a href="contacto.html" class="hover:text-white transition">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LOGO ACTUALIZADO EN EL FOOTER -->
+        <div class="max-w-6xl mx-auto flex flex-col items-center border-t border-white/20 pt-8 text-center">
+            <a href="index.html" class="flex flex-col items-center mb-4 hover:opacity-80 transition">
+                <img src="Imagenes/MN logo.png" alt="MN Peru Foods Logo" class="h-20 w-auto object-contain">
+            </a>
+            <p class="text-xs text-white/60">Copyright © 2026. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
